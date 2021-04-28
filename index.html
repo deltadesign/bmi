@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="style.css" />
     <title>Body Mass Index</title>
   </head>
   <body>
-    <form action="/action_page.php">
-      <label for="height">Height in cm:</label><br />
-      <input type="text" id="height" name="height" placeholder="height" /><br />
-      <label for="weight">Weight in pounds:</label><br />
-      <input
-        type="text"
-        id="weight"
-        name="weight"
-        placeholder="weight"
-      /><br /><br />
-      <input type="submit" value="Submit" />
-    </form>
+    <div class="container">
+      <form id="form">
+        <label for="height">Height in cm:</label><br />
+        <input
+          type="text"
+          id="height"
+          name="height"
+          placeholder="height"
+        /><br />
+        <label for="weight">Weight in kg:</label><br />
+        <input
+          type="text"
+          id="weight"
+          name="weight"
+          placeholder="weight"
+        /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   </body>
   <script src="app.js"></script>
 </html>
