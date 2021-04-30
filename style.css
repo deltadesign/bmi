@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,18 +20,38 @@ body {
   border: 2px rgb(67, 100, 100) solid;
   border-radius: 5%;
   height: 60%;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px 10px rgba(88, 88, 88, 0.5);
+}
+
+#title {
+  font-family: "Lobster", cursive;
+  text-align: center;
 }
 
 #form {
   margin: 5px;
-  border: 2px rgb(67, 100, 100) solid;
+  /* border: 2px rgb(67, 100, 100) solid; */
   border-radius: 5%;
   padding: 4px;
+  text-align: center;
 }
 
 #form input {
+  border: none;
   width: 30ch;
   height: 1.5em;
   text-align: center;
+}
+
+#get-bmi:hover {
+  background-color: aqua;
+}
+
+#result {
+  width: 30ch;
+  margin: 5px;
+  border: 2px rgb(67, 100, 100) solid;
+  border-radius: 5%;
+  padding: 4px;
+  display: none;
 }

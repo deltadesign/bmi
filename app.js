@@ -2,7 +2,7 @@
 document.getElementById('get-bmi').addEventListener('click', bmi)
 
 
-function bmi(e){
+function bmi(e) {
   e.preventDefault()
 
   let w = document.getElementById('weight').value;
@@ -10,6 +10,11 @@ function bmi(e){
   let h = Math.pow(document.getElementById('height').value, 2) / 100;
 
   let result = document.getElementById('result');
-  result.innerHTML = (((w / h)*100).toFixed(2));
+  let form = document.getElementById('form');
+
+  form.style.display = 'none';
+
+  result.style.display = 'block';
+  result.innerHTML = (((w / h) * 100).toFixed(2));
 }
 
