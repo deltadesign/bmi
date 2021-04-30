@@ -10,13 +10,26 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: rgb(173, 226, 206);
 }
 
 .container {
-  border: 2px red solid;
+  background-color: rgb(202, 206, 209);
+  border: 2px rgb(67, 100, 100) solid;
+  border-radius: 5%;
   height: 60%;
+  box-shadow: 5px 10px #888888;
 }
 
 #form {
-  border: 2px aqua solid;
+  margin: 5px;
+  border: 2px rgb(67, 100, 100) solid;
+  border-radius: 5%;
+  padding: 4px;
+}
+
+#form input {
+  width: 30ch;
+  height: 1.5em;
+  text-align: center;
 }
