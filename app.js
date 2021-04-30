@@ -7,9 +7,9 @@ function bmi(e){
 
   let w = document.getElementById('weight').value;
 
-  let h = document.getElementById('height').value;
+  let h = Math.pow(document.getElementById('height').value, 2) / 100;
 
   let result = document.getElementById('result');
-  result.innerHTML = ((w / (h*h)*100)*100).toFixed(2);
+  result.innerHTML = (((w / h)*100).toFixed(2));
 }
 
