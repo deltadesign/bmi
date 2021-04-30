@@ -1,12 +1,14 @@
-let weight;
 
-let height;
-
-
-document.getElementById('get-bmi').addEventListener('click', bmi(weight, height))
+document.getElementById('get-bmi').addEventListener('click', bmi)
 
 
-function bmi(w,h){
+function bmi(e){
+  e.preventDefault()
+
+  let w = document.getElementById('weight').value;
+
+  let h = document.getElementById('height').value;
+
   let result = document.getElementById('result');
   result.innerHTML = (w / Math.pow(h, 2) *100).toFixed(2);
 }
