@@ -10,6 +10,6 @@ function bmi(e){
   let h = document.getElementById('height').value;
 
   let result = document.getElementById('result');
-  result.innerHTML = (w / Math.pow(h, 2) *100).toFixed(2);
+  result.innerHTML = ((w / (h*h)*100)*100).toFixed(2);
 }
 
