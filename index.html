@@ -10,24 +10,56 @@
   <body>
     <div class="container">
       <h1 id="title">BMI Calculator</h1>
-      <form id="form">
-        <label for="height">Height in cm:</label><br />
-        <input
-          type="text"
-          id="height"
-          name="height"
-          placeholder="height"
-        /><br />
-        <label for="weight">Weight in kg:</label><br />
-        <input
-          type="text"
-          id="weight"
-          name="weight"
-          placeholder="weight"
-        /><br /><br />
-        <input type="submit" value="Calculate" id="get-bmi" />
-      </form>
-      <div id="result"></div>
+
+      <p>Choose measure type:</p>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openMeasure(event, 'Metric')">
+          Metric
+        </button>
+        <button class="tablinks" onclick="openMeasure(event, 'Imperial')">
+          Imperial
+        </button>
+      </div>
+      <div id="Metric" class="tabcontent">
+        <form id="form">
+          <label for="height">Height in cm:</label><br />
+          <input
+            type="text"
+            id="height"
+            name="height"
+            placeholder="height"
+          /><br />
+          <label for="weight">Weight in kg:</label><br />
+          <input
+            type="text"
+            id="weight"
+            name="weight"
+            placeholder="weight"
+          /><br /><br />
+          <input type="submit" value="Calculate" id="get-bmi" />
+        </form>
+      </div>
+      <div id="Imperial" class="tabcontent">
+        <form id="form2">
+          <label for="height">Height in inches:</label><br />
+          <input
+            type="text"
+            id="height"
+            name="height"
+            placeholder="height"
+          /><br />
+          <label for="weight">Weight in pounds:</label><br />
+          <input
+            type="text"
+            id="weight"
+            name="weight"
+            placeholder="weight"
+          /><br /><br />
+          <input type="submit" value="Calculate" id="get-bmi" />
+        </form>
+        <div id="result"></div>
+      </div>
     </div>
   </body>
   <script src="app.js"></script>
