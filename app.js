@@ -9,10 +9,10 @@ function bmi(e) {
 
   let h = Math.pow(document.getElementById('height').value, 2) / 100;
 
-  let result = document.getElementById('result');
+  let result = document.querySelector('#result');
   let form = document.getElementById('form');
 
-  form.style.display = 'none';
+  // form.style.display = 'none';
 
   result.style.display = 'block';
   result.innerHTML = (((w / h) * 100).toFixed(2));
