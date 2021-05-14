@@ -11,11 +11,10 @@
     <div class="container">
       <h1 id="title">BMI Calculator</h1>
 
-
-      <p>Choose measure type:</p>
+      <!-- <p>Choose measure type:</p> -->
 
       <div class="tab">
-        <button class="tablinks" onclick="openMeasure(event, 'Metric')">
+        <button class="tablinks active" onclick="openMeasure(event, 'Metric')">
           Metric
         </button>
         <button class="tablinks" onclick="openMeasure(event, 'Imperial')">
@@ -32,14 +31,14 @@
             placeholder="height"
           /><br />
           <label for="weight">Weight in kg:</label><br />
-          <input
-            type="text"
-            id="weight"
-            name="weight"
-            placeholder="weight"
-          /><br /><br />
-          <input type="reset" value="Reset" />
+          <input type="text" id="weight" name="weight" placeholder="weight" />
+          <br />
+          <br />
+          <br />
           <input type="submit" value="Calculate" id="get-bmi" />
+          <br />
+          <br />
+          <input type="reset" value="Reset" />
         </form>
         <div id="result"></div>
       </div>
@@ -53,14 +52,14 @@
             placeholder="height"
           /><br />
           <label for="weight">Weight in pounds:</label><br />
-          <input
-            type="text"
-            id="weight"
-            name="weight"
-            placeholder="weight"
-          /><br /><br />
-          <input type="reset" value="Reset" />
+          <input type="text" id="weight" name="weight" placeholder="weight" />
+          <br />
+          <br />
+          <br />
           <input type="submit" value="Calculate" id="get-bmi" />
+          <br />
+          <br />
+          <input type="reset" value="Reset" />
         </form>
         <div id="result"></div>
       </div>
