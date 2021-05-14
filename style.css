@@ -88,6 +88,7 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  border-radius: 7px 7px 0px 0px;
 }
 
 /* Change background color of buttons on hover */
