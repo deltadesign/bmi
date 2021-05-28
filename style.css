@@ -48,29 +48,49 @@ body {
   text-align: center;
 }
 
+#get-bmi {
+  transition: background 0.5s ease-in-out, letter-spacing 0.8s;
+}
+
 #get-bmi:hover {
-  background-color: aqua;
+  background: aqua;
+  letter-spacing: 1.2px;
+}
+
+#get-bmi:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+
+#reset {
+  transition: background 0.5s, letter-spacing 0.8s;
+}
+
+#reset:hover {
+  background: aqua;
+  letter-spacing: 1.2px;
+}
+
+#reset:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
 }
 
 #result {
   width: 30ch;
-  margin: 5px;
+  margin: 10px auto;
   border: 2px rgb(67, 100, 100) solid;
-  border-radius: 5%;
+  border-radius: 5px;
   padding: 4px;
   display: none;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+  text-align: center;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-top: none;
 }
 
@@ -106,4 +126,12 @@ body {
 /* sets the default to meaure to metric */
 #Metric {
   display: block;
+}
+
+.err {
+  visibility: hidden;
+}
+
+.err.bad {
+  color: red;
 }
