@@ -5,7 +5,6 @@ document.querySelectorAll('#reset').forEach((item)=>{
   item.addEventListener('click', resetForm)
 })
 
-
 function bmi(e) {
   e.preventDefault()
 
