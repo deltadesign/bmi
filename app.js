@@ -19,9 +19,6 @@ function bmi(e) {
     return showErr('bad');
   }
   
-  console.log(typeof h)
-  console.log(typeof w)
-
   let bmi = parseFloat(((w / h) * 100).toFixed(2));
 
   if (bmi < 18.5){
@@ -35,7 +32,7 @@ function bmi(e) {
   }
 
   result.style.display = 'block';
-  // result.innerHTML = (((w / h) * 100).toFixed(2));
+ 
 }
 
 
