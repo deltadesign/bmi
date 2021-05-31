@@ -24,47 +24,28 @@
       <div id="Metric" class="tabcontent">
         <form id="form">
           <label for="height">Height in cm:</label><br />
-          <input
-            type="text"
-            id="height"
-            name="height"
-            placeholder="height"
-          /><br />
+          <input type="text" id="hcm" name="height" placeholder="height" />
           <label for="weight">Weight in kg:</label><br />
-          <input type="text" id="weight" name="weight" placeholder="weight" />
-          <br />
-          <div class="err">Please enter numeric values</div>
-          <br />
-          <input type="submit" value="Calculate" id="get-bmi" />
-          <br />
-          <br />
-          <input type="reset" value="Reset" id="reset" />
+          <input type="text" id="wkgs" name="weight" placeholder="weight" />
         </form>
-        <div id="result"></div>
       </div>
       <div id="Imperial" class="tabcontent">
         <form id="form2">
-          <label for="height">Height in inches:</label><br />
-          <input type="text" id="height" name="height" placeholder="Feet" />
-          <input
-            type="text"
-            name="inches"
-            id="inches"
-            placeholder="inches"
-          /><br />
+          <label for="height">Height in Feet & Inches:</label><br />
+          <input type="text" id="hfeet" name="height" placeholder="Feet" />
+          <input type="text" name="inches" id="hinch" placeholder="inches" />
+          <br />
           <label for="weight">Weight in pounds:</label><br />
-          <input type="text" id="weight" name="weight" placeholder="Stones" />
-          <input type="text" id="weight" name="weight" placeholder="lbs" />
+          <input type="text" id="wstone" name="weight" placeholder="Stones" />
+          <input type="text" id="wlbs" name="weight" placeholder="lbs" />
           <br />
-          <br />
-          <br />
-          <input type="submit" value="Calculate" id="get-bmi" />
-          <br />
-          <br />
-          <input type="reset" value="Reset" id="reset" />
         </form>
-        <div id="result"></div>
       </div>
+      <div class="err">Please enter numeric values</div>
+      <input type="submit" value="Calculate" id="get-bmi" />
+      <br />
+      <input type="reset" id="reset" />
+      <div id="result"></div>
     </div>
   </body>
   <script src="app.js"></script>

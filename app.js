@@ -9,9 +9,20 @@ document.querySelectorAll('#reset').forEach((item)=>{
 function bmi(e) {
   e.preventDefault()
 
-  let w = parseFloat(document.getElementById('weight').value);
+  let wkgs = parseFloat(document.getElementById('wkgs').value);
 
-  let h = Math.pow(document.getElementById('height').value, 2) / 100;
+  let hcm = Math.pow(document.getElementById('hcm').value, 2) / 100;
+
+  let hfeet = document.getElementById('hfeet').value * 30.48;
+  let hinch = document.getElementById('hinch').value * 2.54;
+  let himp = Math.pow(hfeet+hinch,2) /100
+  
+  let wstone = document.getElementById('wstone').value * 6.35029318;
+  let wlbs = document.getElementById('wlbs').value * 0.45359237;
+  let wimp = parseFloat(wstone + wlbs);
+
+  let h = !hcm? himp : hcm;
+  let w = !wkgs? wimp : wkgs; 
 
   let result = document.querySelector('#result');
 
@@ -38,7 +49,8 @@ function bmi(e) {
 
 function resetForm(){
   document.querySelector('#result').style.display = 'none';
-  console.log('reset')
+  document.querySelectorAll("input[type='text']").forEach((item)=>{item.value=""})
+  console.log('form has been reset')
 }
 
 function openMeasure(evt, unitType) {
