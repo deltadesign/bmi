@@ -24,6 +24,15 @@ body {
   box-shadow: 5px 10px 10px rgba(88, 88, 88, 0.5);
 }
 
+.container input {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  width: 30ch;
+  height: 1.5em;
+  text-align: center;
+}
+
 #title {
   font-family: "Lobster", cursive;
   text-align: center;
@@ -34,14 +43,12 @@ body {
 #form,
 #form2 {
   margin: 5px;
-  /* border: 2px rgb(67, 100, 100) solid; */
   border-radius: 5%;
   padding: 4px;
   text-align: center;
 }
 
-#form input,
-#form2 input {
+#form input {
   border: none;
   width: 30ch;
   height: 1.5em;
@@ -49,6 +56,7 @@ body {
 }
 
 #form2 input[type="text"] {
+  display: inline;
   border: none;
   width: 15ch;
   height: 1.5em;
@@ -140,6 +148,7 @@ body {
 }
 
 .err.bad {
+  text-align: center;
   color: red;
   visibility: visible;
 }
