@@ -33,33 +33,35 @@
           <label for="weight">Weight in kg:</label><br />
           <input type="text" id="weight" name="weight" placeholder="weight" />
           <br />
-          <br />
+          <div class="err">Please enter numeric values</div>
           <br />
           <input type="submit" value="Calculate" id="get-bmi" />
           <br />
           <br />
-          <input type="reset" value="Reset" />
+          <input type="reset" value="Reset" id="reset" />
         </form>
         <div id="result"></div>
       </div>
       <div id="Imperial" class="tabcontent">
         <form id="form2">
           <label for="height">Height in inches:</label><br />
+          <input type="text" id="height" name="height" placeholder="Feet" />
           <input
             type="text"
-            id="height"
-            name="height"
-            placeholder="height"
+            name="inches"
+            id="inches"
+            placeholder="inches"
           /><br />
           <label for="weight">Weight in pounds:</label><br />
-          <input type="text" id="weight" name="weight" placeholder="weight" />
+          <input type="text" id="weight" name="weight" placeholder="Stones" />
+          <input type="text" id="weight" name="weight" placeholder="lbs" />
           <br />
           <br />
           <br />
           <input type="submit" value="Calculate" id="get-bmi" />
           <br />
           <br />
-          <input type="reset" value="Reset" />
+          <input type="reset" value="Reset" id="reset" />
         </form>
         <div id="result"></div>
       </div>
