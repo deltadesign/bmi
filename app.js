@@ -9,23 +9,25 @@ document.querySelectorAll('#reset').forEach((item)=>{
 function bmi(e) {
   e.preventDefault()
 
-  let w = document.getElementById('weight').value;
+  let w = parseFloat(document.getElementById('weight').value);
 
   let h = Math.pow(document.getElementById('height').value, 2) / 100;
 
   let result = document.querySelector('#result');
 
   if(!h || !w){
-    return showErr('bad')
+    return showErr('bad');
   }
-
+  
+  console.log(typeof h)
+  console.log(typeof w)
 
   let bmi = parseFloat(((w / h) * 100).toFixed(2));
 
   if (bmi < 18.5){
-    result.innerHTML = `A Body Mass Index of ${bmi} is considered Obese`;
+    result.innerHTML = `A Body Mass Index of ${bmi} is considered underweight`;
   }else if (bmi > 30) {
-      result.innerHTML = `A Body Mass Index of ${bmi} is considered overweight`
+      result.innerHTML = `A Body Mass Index of ${bmi} is considered obese`
   } else if (bmi > 25) {
     result.innerHTML = `A Body Mass Index of ${bmi} is considered overweight`
   } else {
@@ -60,11 +62,10 @@ function openMeasure(evt, unitType) {
 function showErr(type){
   if (type === "bad"){
     document.querySelector('.err').classList.add('bad')
-    document.querySelector('.err').style.visibility = 'visible';
   }
 
-  setTimeout(() => {
-    document.querySelector('.err').style.visibility = 'hidden';
+   setTimeout(() => {
+    document.querySelector('.err').classList.remove('bad');
   }, 3000);
  
 }

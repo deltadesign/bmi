@@ -48,6 +48,13 @@ body {
   text-align: center;
 }
 
+#form2 input[type="text"] {
+  border: none;
+  width: 15ch;
+  height: 1.5em;
+  text-align: center;
+}
+
 #get-bmi {
   transition: background 0.5s ease-in-out, letter-spacing 0.8s;
 }
@@ -134,4 +141,5 @@ body {
 
 .err.bad {
   color: red;
+  visibility: visible;
 }
